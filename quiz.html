@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware PC - Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Hardware & Informatique</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="composants.html">Composants</a></li>
+                <li><a href="quiz.html" class="active">Quiz Interactif</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Testez vos connaissances en Hardware</h2>
+        <div class="quiz-box">
+            <p><strong>Question :</strong> Quelle mémoire perd ses données lorsque l'ordinateur est éteint ?</p>
+            
+            <form id="quiz-form">
+                <label class="radio-label">
+                    <input type="radio" name="hardware-quiz" value="faux1"> Le Disque Dur (SSD)
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="hardware-quiz" value="vrai"> La Mémoire Vive (RAM)
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="hardware-quiz" value="faux2"> Le cache du CPU
+                </label>
+                
+                <button type="button" onclick="verifierReponse()">Valider la réponse</button>
+            </form>
+
+            <div id="resultat"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projet NSI</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
